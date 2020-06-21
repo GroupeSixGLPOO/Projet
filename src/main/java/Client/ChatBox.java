@@ -1,10 +1,9 @@
-package client;
+package Client;
 
 import entity.ChatInfo;
 import entity.Contact;
 
 import javax.swing.*;
-import java.awt.*;
 import java.sql.Date;
 
 public class ChatBox extends javax.swing.JFrame{
