@@ -1,8 +1,8 @@
 package Client;
 
 import entity.Contact;
-import server.ContactHandler;
-import server.LogOffHandler;
+import Server.ContactHandler;
+import Server.LogOffHandler;
 
 import javax.swing.*;
 import java.util.Vector;
