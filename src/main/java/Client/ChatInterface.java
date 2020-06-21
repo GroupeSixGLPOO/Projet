@@ -21,7 +21,7 @@ public class ChatInterface extends JFrame {
     private final static String newline = "\n";
 
     public ChatInterface(){
-        super("WOW");
+        super("fenetre");
 
         setLayout(new FlowLayout());
 
