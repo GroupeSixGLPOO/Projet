@@ -1,5 +1,5 @@
 import org.junit.Test;
-import server.DBAccessHelper;
+import Server.DBAccessHelper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
