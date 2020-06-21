@@ -165,8 +165,8 @@ public class ChatBox extends javax.swing.JFrame{
         chatInfo.setSendTime(sentTime);
         System.out.println(sentTime);
 
-        String content = sentTime + "\n" + bfContact.getUname() + "  Said to"
-                + gfContact.getUname() + ":\n" + txtChat.getText() + "\n";
+        String content = sentTime + "\n" + bfContact.getUname() + " Said to "
+                + gfContact.getUname() + ":\n" + txtChat.getText() + "\n"+"\n";
 
         chatInfo.setContent(content);
         txtChat.setText("");
