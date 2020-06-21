@@ -1,7 +1,7 @@
 package Client;
 
 import entity.RegisterInfo;
-import server.RegisterHandler;
+import Server.RegisterHandler;
 
 import javax.swing.*;
 import java.awt.*;
