@@ -5,23 +5,39 @@ import java.io.*;
 import java.net.Socket;
 
 
-public class ClientThread extends Thread {
+public class ClientThread {
 
-    private Socket clientSocket;
-    public ClientThread(Socket socket) {
-        this.clientSocket = socket;
-    }
 
-    public void run() {
+    public static Object run(Object sendobject) {
+        Object reciveobject = null;
         try {
-            OutputStream os = clientSocket.getOutputStream();
-            InputStream is = clientSocket.getInputStream();
+            // 1.connect to the server
+            Socket serverSocket = new Socket("localhost", 30000);
+
+            // 2.get oos,ois
+            OutputStream os = serverSocket.getOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(os);
+
+            InputStream is = serverSocket.getInputStream();
+            ObjectInputStream ois = new ObjectInputStream(is);
+
+            // 3.send
+            oos.writeObject(sendobject);
 
 
+            // 4.receive
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            reciveobject = (Object) ois.readObject();
 
+            ois.close();
+            oos.close();
+            serverSocket.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return reciveobject;
     }
+
 }

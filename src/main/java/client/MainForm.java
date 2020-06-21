@@ -60,9 +60,9 @@ public class MainForm extends javax.swing.JFrame{
                 return contactmodel.get(i);
             }
         });
-        ////////////////////////////////////////////////////
+
         ListContacts.setSelectionBackground(new java.awt.Color(51, 51, 255));
-        ////////////////////////////////////////////////////
+
         ListContacts.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 if(!ListContacts.getValueIsAdjusting()){
@@ -111,7 +111,6 @@ public class MainForm extends javax.swing.JFrame{
                 ListContacts.getSelectedValue();
 
 //        System.out.println(gfContact.getUid());
-
 //        System.out.println("contactsModel "+contactsModel.elementAt(0));
 
         bfContact=(Contact)contactsModel.elementAt(0);

@@ -161,9 +161,8 @@ public class ChatBox extends javax.swing.JFrame{
         Date now = new Date(System.currentTimeMillis());
         String sentTime = now.toString();
 
-        /**************************************************************/
+
         chatInfo.setSendTime(sentTime);
-        System.out.println(sentTime);
 
         String content = sentTime + "\n" + bfContact.getUname() + " Said to "
                 + gfContact.getUname() + ":\n" + txtChat.getText() + "\n"+"\n";
@@ -171,12 +170,15 @@ public class ChatBox extends javax.swing.JFrame{
         chatInfo.setContent(content);
         txtChat.setText("");
         txtHist.append(content);
+
+        // Send content to server
+
+        /*
+        Object sendobject = content;
+        ClientThread.run(sendobject);
+        */
     }
 
-    public void appendMsg(String msg) {
-        this.txtHist.append(msg);
-
-    }
 
     private void txtChatActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:

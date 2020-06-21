@@ -8,8 +8,8 @@ public class ChatServer {
         // TODO Auto-generated method stub
         ServerSocket serverSocket;
         try {
-            serverSocket = new ServerSocket(20000);
-//            serverSocket.setReuseAddress(true); //设置 ServerSocket 的选项
+            serverSocket = new ServerSocket(30000);
+//            serverSocket.setReuseAddress(true);
             System.out.println("Server is running....");
 
             Socket clientSocket;
