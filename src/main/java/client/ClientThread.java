@@ -22,8 +22,6 @@ public class ClientThread extends Thread {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
+
     }
 }
