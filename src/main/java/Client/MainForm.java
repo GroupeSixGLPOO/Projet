@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 import entity.Contact;
 import server.ContactHandler;
