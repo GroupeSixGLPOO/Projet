@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 public class ClientData {
     public String clientName;
