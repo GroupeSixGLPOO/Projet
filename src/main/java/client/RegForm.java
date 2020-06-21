@@ -344,17 +344,15 @@ public class RegForm extends javax.swing.JFrame{
             JOptionPane.showMessageDialog(this, "Email address already exists!");
         }else{
             int uid = registerHandler.InsertInfo(registerInfo);
-            JOptionPane.showMessageDialog(this, "Your uid is "+uid);
+            JOptionPane.showMessageDialog(this, "Your uid is "+uid+", please remind it!");
+
+            this.agetxt.setText("");
+            this.emailtxt.setText("");
+            this.nametxt.setText("");
+            this.password.setText("");
+            LogInForm logInForm = new LogInForm();
+            logInForm.setVisible(true);
         }
 
-
     }
-
-//    public static void main(String args[]) {
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                new RegForm().setVisible(true);
-//            }
-//        });
-//    }
 }
