@@ -1,4 +1,4 @@
-package server;
+package Server;
 
 import entity.RegisterInfo;
 import java.sql.ResultSet;
