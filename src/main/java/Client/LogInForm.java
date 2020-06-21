@@ -1,7 +1,7 @@
 package Client;
 
 import entity.LogInfo;
-import server.LogInHandler;
+import Server.LogInHandler;
 
 import javax.swing.*;
 import java.awt.*;
