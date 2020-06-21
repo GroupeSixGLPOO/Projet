@@ -66,7 +66,7 @@ public class ChatInterface extends JFrame {
         username.addActionListener(handler);
         item3.addActionListener(handler);
         try {
-            Socket s = new Socket("localhost",3333);
+            Socket s = new Socket("localhost",1111);
             clientThread = new MultiClients(s,this);
             clientThread.start();
         } catch (UnknownHostException e) {
