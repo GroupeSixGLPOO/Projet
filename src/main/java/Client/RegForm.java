@@ -1,4 +1,4 @@
-package client;
+package Client;
 
 import entity.RegisterInfo;
 import server.RegisterHandler;
