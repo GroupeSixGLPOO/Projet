@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 import entity.LogInfo;
 import server.LogInHandler;
